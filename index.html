@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Cake City | Royal Cake Shop</title>
+
+<style>
+body{
+    margin:0;
+    font-family: 'Segoe UI', sans-serif;
+    background:#f8f5f0;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(to right,#3e2723,#6d4c41);
+    color:gold;
+    text-align:center;
+    padding:20px;
+    font-size:28px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+nav{
+    background:#4e342e;
+    text-align:center;
+    padding:10px;
+}
+
+nav a{
+    color:white;
+    margin:0 15px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:gold;
+}
+
+.hero{
+    background:url('https://images.unsplash.com/photo-1559628233-100c798642d4') center/cover no-repeat;
+    height:400px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    text-shadow:2px 2px 5px black;
+    font-size:40px;
+    font-weight:bold;
+}
+
+section{
+    padding:50px 20px;
+    text-align:center;
+}
+
+h2{
+    color:#6d4c41;
+    margin-bottom:20px;
+}
+
+.cakes{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.cake-card{
+    background:white;
+    width:250px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    overflow:hidden;
+}
+
+.cake-card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.cake-card h3{
+    padding:10px;
+    color:#4e342e;
+}
+
+form{
+    max-width:500px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+input, select, textarea{
+    padding:10px;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+
+button{
+    background:gold;
+    border:none;
+    padding:12px;
+    font-weight:bold;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+button:hover{
+    background:#d4af37;
+}
+
+footer{
+    background:#3e2723;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:15px;
+    border-radius:50%;
+    text-decoration:none;
+    font-size:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>The Cake City 👑</header>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#cakes">Our Cakes</a>
+<a href="#order">Book Order</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<div class="hero" id="home">
+Taste The Royal Sweetness 🎂
+</div>
+
+<section id="about">
+<h2>About Us</h2>
+<p>Welcome to The Cake City. We create royal, premium and delicious cakes for every special occasion. From birthdays to weddings, we make your moments sweeter.</p>
+</section>
+
+<section id="cakes">
+<h2>Our Cakes</h2>
+<div class="cakes">
+<div class="cake-card">
+<img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587">
+<h3>Chocolate Cake ₹500/kg</h3>
+</div>
+<div class="cake-card">
+<img src="https://images.unsplash.com/photo-1559628233-100c798642d4">
+<h3>Wedding Cake ₹1500/kg</h3>
+</div>
+<div class="cake-card">
+<img src="https://images.unsplash.com/photo-1603532648955-039310d9ed75">
+<h3>Designer Cake ₹1000/kg</h3>
+</div>
+</div>
+</section>
+
+<section id="order">
+<h2>Book Order</h2>
+
+<form action="mailto:thecakeciity@gmail.com" method="post" enctype="text/plain">
+<input type="text" name="Customer Name" placeholder="Your Name" required>
+<input type="tel" name="Phone Number" placeholder="Phone Number" required>
+<input type="email" name="Email" placeholder="Email" required>
+
+<select name="Cake Type">
+<option>Birthday Cake</option>
+<option>Wedding Cake</option>
+<option>Anniversary Cake</option>
+<option>Custom Designer Cake</option>
+</select>
+
+<select name="Flavor">
+<option>Chocolate</option>
+<option>Vanilla</option>
+<option>Butterscotch</option>
+<option>Strawberry</option>
+</select>
+
+<select name="Weight">
+<option>1 KG</option>
+<option>2 KG</option>
+<option>3 KG</option>
+</select>
+
+<input type="date" name="Delivery Date" required>
+<textarea name="Message on Cake" placeholder="Custom Message on Cake"></textarea>
+<textarea name="Delivery Address" placeholder="Delivery Address"></textarea>
+
+<button type="submit">Submit Order</button>
+</form>
+
+</section>
+
+<section id="contact">
+<h2>Contact Us</h2>
+<p><strong>Phone:</strong> 9023679874</p>
+<p><strong>Email:</strong> thecakeciity@gmail.com</p>
+<p><strong>Address:</strong> Shop No. 9, The Cake City, Apex Lake View, Near Akramaruti Lake, Umbergaon</p>
+
+<iframe src="https://www.google.com/maps?q=Umbergaon&output=embed" 
+width="100%" height="300" style="border:0;"></iframe>
+</section>
+
+<footer>
+© 2026 The Cake City | All Rights Reserved
+</footer>
+
+<a href="https://wa.me/919023679874" class="whatsapp">💬</a>
+
+</body>
+</html>
